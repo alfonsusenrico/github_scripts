@@ -13,9 +13,8 @@ git config --global user.email "YOUR_GITHUB_EMAIL"
 # USAGE
 
 Create new repo (default to public)<br/>
-  <br/><b>creategit REPO_NAME</b><br/>
+  <b>creategit REPO_NAME</b><br/><br/>
 (OPTIONAL) Create new public repo privately<br/>
-  <br/><b>creategit REPO_NAME true</b><br/>
-
+  <b>creategit REPO_NAME true</b><br/><br/>
 Push commit<br/>
-  <br/><b>push</b><br/>
+  <b>push</b><br/>
