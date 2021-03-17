@@ -2,7 +2,13 @@
 
 name=$1
 private=$2
+user="$(git config user.name)"
 
+if [ $user == "" ]
+then
+	echo "Please set git username first by doing 'git config --global user.name YOUR_USERNAME'"
+	exit
+fi
 if [ -z "$2" ]
 then
 	private=false
