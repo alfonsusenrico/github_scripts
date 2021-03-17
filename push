@@ -2,14 +2,14 @@
 
 while  [ true ]
 do
-	echo "List file gitignore"
+	echo "List file .gitignore"
 	echo "==================="
-	echo ""
+	echo " "
 	while read line
 	do
 		echo $line
 	done < .gitignore
-	echo "Masukkan file gitignore (d untuk berhenti):"
+	echo "Input file gitignore (d untuk berhenti):"
 	read file
 	if [ "$file" != "d" ]
 	then
@@ -19,7 +19,7 @@ do
 			clear
 		else
 			clear
-			echo "File/Folder tidak ada!"
+			echo "File / folder doesn't exist!"
 		fi
 	else
 		break
@@ -37,7 +37,7 @@ git branch -M main
 
 git push -u origin main
 
-echo ""
+echo " "
 echo "================================="
 echo "Git commit berhasil, monggo dicek"
 echo "================================="

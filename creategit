@@ -15,7 +15,7 @@ then
 	git remote add origin https://github.com/"$(git config user.name)"/"$name".git
 	touch .gitignore
 	echo ""
-	echo "Repository berhasil dibuat"
+	echo "Repository succesfully created"
 else
-	echo "Input tidak lengkap!"
+	echo "Please input repository name"
 fi
