@@ -9,7 +9,7 @@ do
 	do
 		echo $line
 	done < .gitignore
-	echo "Input file gitignore (d untuk berhenti):"
+	echo "Input file to gitignore (d to stop):"
 	read file
 	if [ "$file" != "d" ]
 	then
