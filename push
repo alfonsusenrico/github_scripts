@@ -1,0 +1,43 @@
+#!/bin/bash
+
+while  [ true ]
+do
+	echo "List file gitignore"
+	echo "==================="
+	echo ""
+	while read line
+	do
+		echo $line
+	done < .gitignore
+	echo "Masukkan file gitignore (d untuk berhenti):"
+	read file
+	if [ "$file" != "d" ]
+	then
+		if [ -f "$file" ]
+		then
+			echo "$file" >> .gitignore
+			clear
+		else
+			clear
+			echo "File/Folder tidak ada!"
+		fi
+	else
+		break
+	fi
+done
+
+git add .
+
+echo "Commit message: "
+read msg
+
+git commit -m "$msg"
+
+git branch -M main
+
+git push -u origin main
+
+echo ""
+echo "================================="
+echo "Git commit berhasil, monggo dicek"
+echo "================================="
