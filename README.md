@@ -7,8 +7,8 @@ First create the personal access token for your github account, give permission 
 https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token
 
 Then don't forget to assign git config<br/>
-git config --global user.name "YOUR_GITHUB_USERNAME"<br/>
-git config --global user.email "YOUR_GITHUB_EMAIL"<br/>
+<b>git config --global user.name "YOUR_GITHUB_USERNAME"</b><br/>
+<b>git config --global user.email "YOUR_GITHUB_EMAIL"</b><br/>
  
 # USAGE
 
