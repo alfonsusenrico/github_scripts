@@ -1,23 +1,21 @@
-# GITHUB REPO AUTO GENERATE
-Simple bash script to automatic generate new repo from commandline
+# GITHUB SCRIPTS
+Simple bash scripts to automatic do some github stuff from command line
 
 # INSTALLATION
 
 First create the personal access token for your github account, give permission to repo's activities.
 https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token
 
-Windows :
-  1. Git clone this repo to your project folder
-  2. Open script with any text-editor, change the #TOKEN# with your personal access token
-
-Linux   :
-  1. Git clone this repo to your project folder
-  2. Open script with any text-editor, change the #TOKEN# with your personal access token
-  3. If you want to use the script globally, you can move it to /usr/bin or /usr/local/bin
+Then don't forget to assign git config
+git config --global user.name "YOUR_GITHUB_USERNAME"
+git config --global user.email "YOUR_GITHUB_EMAIL"
  
 # USAGE
 
-1. Create new repo (default to public)<br/>
-    creategit REPO_NAME
-3. (OPTIONAL) Create new public repo privately<br/>
-  creategit REPO_NAME true
+Create new repo (default to public)<br/>
+  creategit REPO_NAME<br/>
+(OPTIONAL) Create new public repo privately<br/>
+  creategit REPO_NAME true<br/>
+
+Push commit
+  push
